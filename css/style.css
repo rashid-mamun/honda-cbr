@@ -1,3 +1,6 @@
+
+/* google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body {
     font-family: 'Poppins', sans-serif;
@@ -64,6 +67,21 @@ span {
 
   .latest-news {
       margin-top: 158px;
+  }
+  .latest-news {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+   
+  }
+  /* extra section */
+  .honda-social {
+      background-color: #EBEBEB;
+  }
+  .honda-social .honda-img {
+      width: 100%;
   }
 
   /* -------------

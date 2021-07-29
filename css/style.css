@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background: #264653;
+}
+.btn-honda {
+    padding: 10px 24px;
+    border: 1px solid #e76f51;;
+    background: #E76F51;
+    border-radius: 5px;
+    color: white;
+}
+small {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+}
+ header h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+ header p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E0E0E0;
+}
+/* .fetured section */
+.fetured {
+    margin-top: 65px;
+}
+.fetured h1 {
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 72px;
+color: #000000;
+
+}
+span {
+    color:#E76F51;
+}
+.fetured .row {
+    margin-top: 124px;
+}
+.fetured .gray-scale {
+    filter: grayscale(100%);
+  }
+
+  /* latest-news section */
+
+  .latest-news {
+      margin-top: 158px;
+  }
+
+  /* -------------
+        clients section-
+  ---------------- */
+  .clients {
+      margin-top: 160px;
+      margin-bottom: 158px;
+  }
+  .clients h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 52px;
+  }
+  .clients .card img {
+      width: 169px;
+  }
+  .clients .card-body p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.2px; 
+    color: #6C6C6C;
+  }
+
+  .fa-star {
+    font-size: 12px;
+}
+.fa-star.filled {
+    color: #FFC014;
+}
+.fa-star.empty {
+    color: #aeaeae;
+}
+.client-name {
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #23A6F0;
+}
+.clients .card h5 {
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #252B42;
+}
+
+/* Frequently Asked section */
+.questions h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px;
+    color: #0D0925;
+    margin-bottom: 112px;
+}
+
+/* footer section */
+footer {
+    margin-top: 140px;
+    background: #0B0D17;
+    color:gray;
+}
+footer .nav-link {
+    color: gray;
+}
+footer i {
+    font-size: 27px;
+}
+footer small {
+    font-size: 12px;
+    color: gray;
+}

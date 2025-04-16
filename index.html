@@ -1,36 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Honda CBR 300R and other featured bikes. Find dealers, read news, and more.">
+    <title>Honda CBR - Motorcycle Showcase</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- font-awesome -->
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/33d61158f6.js" crossorigin="anonymous"></script>
-
-    <!-- custom css -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Honda Cbr!</title>
 </head>
-
 <body>
-
-    <header class="py-3">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark container" aria-label="Main navigation">
             <div class="container">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex  align-items-center">
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -40,572 +30,333 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#news">News</a>
                         </li>
-                        <li class="nav-item me-lg-5">
-                            <a class="nav-link" href="#contact">contact</a>
+                        <li class="nav-item me-lg-4">
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
-                        <li class="nav-item ms-lg-5">
-                            <a class="nav-link" href="#"><button class="btn-honda">Log In</button></a>
+                        <li class="nav-item ms-lg-4">
+                            <a class="nav-link" href="#"><button class="btn btn-honda">Log In</button></a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
-
-        <section class="container py-5">
-            <div class="row g-4">
-                <div class="col-lg-6 d-flex align-items-center text-white">
-                    <div>
-                        <p><small>Computer-controlled digital transistorized with electronic advance</small></p>
-                        <h1>Honda CBR 300R</h1>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                            consequat
-                            duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                        <!-- Button trigger modal -->
-                        <button class="btn-honda" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Purchase</button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"></h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body text-info">
-                                        Hero MotoCorp Limited, formerly Hero Honda, is an Indian multinational
-                                        motorcycle and scooter manufacturer headquartered in New Delhi, India. The
-                                        company is the largest two-wheeler manufacturer in the world, and also in India,
-                                        where it has a market share of about 37.1% in the two-wheeler industry.
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Close</button>
-
-
-
-                                    </div>
+        <section class="container hero py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 text-white">
+                    <p class="subtitle">Computer-controlled digital transistorized with electronic advance</p>
+                    <h1 class="display-4 fw-bold">Honda CBR 300R</h1>
+                    <p class="lead">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn btn-honda" data-bs-toggle="modal" data-bs-target="#purchaseModal" aria-label="Purchase Honda CBR 300R">Purchase</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="purchaseModalLabel">About Hero MotoCorp</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-info">
+                                    Hero MotoCorp Limited, formerly Hero Honda, is an Indian multinational motorcycle and scooter manufacturer headquartered in New Delhi, India. The company is the largest two-wheeler manufacturer in the world, with a market share of about 37.1% in India.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="images/header-bike.png" class="img-fluid" alt="">
+                    <img src="images/header-bike.png" class="img-fluid" alt="Honda CBR 300R motorcycle" loading="lazy">
                 </div>
             </div>
         </section>
     </header>
-    <!-- ------
-            main area start
-            ------ -->
-
     <main>
-        <section class="container fetured">
-            <div class="text-center">
-                <h1>Fetured Bikes 20211</h1>
-                <small><span>Best bike collection</span></small>
+        <section class="container featured py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Featured Bikes 2021</h2>
+                <p class="text-primary fw-medium">Best bike collection</p>
             </div>
-            <div class="row gy-4">
+            <div class="row g-4">
                 <div class="col-lg-4 d-flex justify-content-center">
-                    <img src="images\feature-bike.jpg" class="gray-scale" alt="" width="288px" height="243px">
+                    <img src="images/feature-bike.jpg" class="img-fluid grayscale" alt="Featured bike 1" width="288" height="243" loading="lazy">
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
-                    <img src="images\feature-bike.jpg" alt="" width="288px" height="243px">
+                    <img src="images/feature-bike.jpg" class="img-fluid" alt="Featured bike 2" width="288" height="243" loading="lazy">
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center">
-                    <img src="images\feature-bike.jpg" class="gray-scale" alt="" width="288px" height="243px">
+                    <img src="images/feature-bike.jpg" class="img-fluid grayscale" alt="Featured bike 3" width="288" height="243" loading="lazy">
                 </div>
             </div>
-
         </section>
-        <!-- latest section -->
-        <section class="container latest-news">
-            <h3 class="text-center fw-bold mb-4">latest News</h3>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100 p-3 border-0 shadow rounded-3;">
-                        <div class="px-2">
-                            <img src="images/bike-1.png" class="card-img-top" alt="...">
-                        </div>
+        <section class="container latest-news py-5" id="news">
+            <h2 class="text-center fw-bold mb-5">Latest News</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card h-100 p-3 border-0 shadow rounded-3">
+                        <img src="images/bike-1.png" class="card-img-top" alt="Ducati XDIAVEL S-73" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">Ducati XDIAVEL S-73</h5>
-                            <p class="card-text">The new sports version, the Black Star, and the matt black total look
-                                version, the XDiavel Dark, further enhance the strengths of the XDiavel. These include
-                                the ability to combine exciting performance, sports bike power and refined electronics
-                                with the typical cruiser features: a long low and comfortable bike with advanced
-                                footpegs and a powerful torque even at low revs, but also top materials and finishes.
-                            </p>
+                            <h3 class="card-title h5">Ducati XDIAVEL S-73</h3>
+                            <p class="card-text">The Black Star and XDiavel Dark enhance the XDiavel's strengths, combining exciting performance, sports bike power, and refined electronics with cruiser features.</p>
                         </div>
-                        <div class="card-footer border-0 bg-white">
-                            <button class="btn btn-outline-primary active">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 p-3 border-0 shadow rounded-3;">
-                        <div class="px-2">
-                            <img src="images/bike-2.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Motorcycles & Scooters</h5>
-                            <p class="card-text">Find a huge selection of motorcycles and scooters in this great range,
-                                from loads of popular manufacturers. Fun and practical, motorcycles and scooters are the
-                                perfect solutions to commuting through traffic, particularly if you live in a busy town
-                                or city. They are also the perfect weekend hobby, as you may want to make modifications
-                                or make sure your model stays in tip-top condition. </p>
-                        </div>
-                        <div class="card-footer border-0 bg-white">
+                        <div class="card-footer border-0 bg-transparent">
                             <button class="btn btn-outline-primary">Read More</button>
                         </div>
-                    </div>
+                    </article>
                 </div>
-                <div class="col">
-                    <div class="card h-100 p-3 border-0 shadow rounded-3;">
-                        <div class="px-2">
-                            <img src="images/bike-3.png" class="card-img-top" alt="...">
-                        </div>
+                <div class="col-md-4">
+                    <article class="card h-100 p-3 border-0 shadow rounded-3">
+                        <img src="images/bike-2.png" class="card-img-top" alt="Motorcycles and scooters" loading="lazy">
                         <div class="card-body">
-                            <h5 class="card-title">20211 Honda CBR500R
-                            </h5>
-                            <p class="card-text">Is it any wonder why the Honda CBR500R is one of our most popular
-                                sportbikes? It just gets so many things right. Price. Power. Weight. Handling. Its
-                                twin-cylinder engine revs freely and produces plenty of torque, and it lets us keep the
-                                bike narrow and nimble too. The full-coverage bodywork looks like something right off
-                                the racetrac. Best of all, it’s a bike you can start out on and never have to trade up.
-                            </p>
+                            <h3 class="card-title h5">Motorcycles & Scooters</h3>
+                            <p class="card-text">A huge selection of motorcycles and scooters, perfect for commuting through traffic or as a weekend hobby.</p>
                         </div>
-                        <div class="card-footer border-0 bg-white">
+                        <div class="card-footer border-0 bg-transparent">
                             <button class="btn btn-outline-primary">Read More</button>
                         </div>
-                    </div>
+                    </article>
                 </div>
-
-
-
+                <div class="col-md-4">
+                    <article class="card h-100 p-3 border-0 shadow rounded-3">
+                        <img src="images/bike-3.png" class="card-img-top" alt="Honda CBR500R" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title h5">2021 Honda CBR500R</h3>
+                            <p class="card-text">The Honda CBR500R is a popular sportbike with great price, power, weight, and handling, perfect for beginners and seasoned riders.</p>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent">
+                            <button class="btn btn-outline-primary">Read More</button>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
-
-        <!-- -----
-            extra section-
-            
-            ---- -->
-        <!-- honda-social  -->
-        <section class="container honda-social my-5 py-5 rounded-3">
-            <h1 class="fw-bold text-center mb-5"><span>HONDA SOCIAL</span></h1>
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2  gy-5">
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body">
-                            <div class="card-title d-flex justify-content-between">
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                        <img src="images/header-bike.png" width="26px" alt="">
+        <section class="honda-social py-5">
+            <div class="container">
+                <h2 class="fw-bold text-center mb-5"><span>Honda Social</span></h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-3">
+                        <article class="card h-100 border-0 shadow">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/header-bike.png" width="26" alt="Honda logo" loading="lazy">
                                         <div class="ms-2">
-                                            <a href="#" class="text-decoration-none text-muted">Honda</a> <br>
+                                            <a href="#" class="text-decoration-none text-muted">Honda</a><br>
                                             <a href="#" class="text-decoration-none text-muted">@honda</a>
                                         </div>
                                     </div>
-
+                                    <i class="fab fa-twitter fs-4 text-primary"></i>
                                 </div>
-                                <i class="fab fa-twitter fs-2"></i>
-
-
+                                <p class="card-text">The perfect amount of space for all those summer plans.<br>#HondaPassport</p>
                             </div>
-                            <p class="card-text">
-
-                                The perfect amount of space for all those summer plans.
-                                <br> #HondaPassport
-                            </p>
-                        </div>
-                        <img src="images/c-1.png" class="card-img-top honda-img" alt="...">
-
-
-                        <p class="text-end me-2 text-muted mt-3">21 Jul 2021</p>
-
+                            <img src="images/c-1.png" class="card-img-bottom" alt="Honda Passport" loading="lazy">
+                            <p class="text-end me-2 text-muted mt-3 small">21 Jul 2021</p>
+                        </article>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body">
-                            <div class="card-title d-flex justify-content-between">
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                        <img src="images/header-bike.png" width="26px" alt="">
+                    <div class="col-md-4 col-lg-3">
+                        <article class="card h-100 border-0 shadow">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/header-bike.png" width="26" alt="Honda logo" loading="lazy">
                                         <div class="ms-2">
-                                            <a href="#" class="text-decoration-none text-muted">Honda</a> <br>
+                                            <a href="#" class="text-decoration-none text-muted">Honda</a><br>
                                             <a href="#" class="text-decoration-none text-muted">@honda</a>
                                         </div>
                                     </div>
-
+                                    <i class="fab fa-twitter fs-4 text-primary"></i>
                                 </div>
-                                <i class="fab fa-twitter fs-2"></i>
-
-
+                                <p class="card-text">Always chasing fun. The all-new<br>#HondaCivic Sedan.</p>
                             </div>
-                            <p class="card-text">
-                                Always chasing fun. The all-new <br> #HondaCivic Sedan.
-                            </p>
-                        </div>
-                        <img src="images/c-2.png" class="card-img-top honda-img" alt="...">
-
-
-                        <p class="text-end me-2 text-muted mt-3">21 Jul 2021</p>
-
+                            <img src="images/c-2.png" class="card-img-bottom" alt="Honda Civic Sedan" loading="lazy">
+                            <p class="text-end me-2 text-muted mt-3 small">21 Jul 2021</p>
+                        </article>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body">
-                            <div class="card-title d-flex justify-content-between">
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                        <img src="images/header-bike.png" width="26px" alt="">
+                    <div class="col-md-4 col-lg-3">
+                        <article class="card h-100 border-0 shadow">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/header-bike.png" width="26" alt="Honda logo" loading="lazy">
                                         <div class="ms-2">
-                                            <a href="#" class="text-decoration-none text-muted">Honda</a> <br>
+                                            <a href="#" class="text-decoration-none text-muted">Honda</a><br>
                                             <a href="#" class="text-decoration-none text-muted">@honda</a>
                                         </div>
                                     </div>
-
+                                    <i class="fab fa-twitter fs-4 text-primary"></i>
                                 </div>
-                                <i class="fab fa-twitter fs-2"></i>
-
-
+                                <p class="card-text">Dark and brooding.<br>#HondaAccord</p>
                             </div>
-                            <p class="card-text">
-                                Always chasing fun. The all-new <br> #HondaCivic Sedan.
-                            </p>
-                        </div>
-                        <img src="images/c-3.png" class="card-img-top honda-img" alt="...">
-
-
-                        <p class="text-end me-2 text-muted mt-3">21 Jul 2021</p>
-
+                            <img src="images/c-4.png" class="card-img-bottom" alt="Honda Accord" loading="lazy">
+                            <p class="text-end me-2 text-muted mt-3 small">21 Jul 2021</p>
+                        </article>
                     </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body">
-                            <div class="card-title d-flex justify-content-between">
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                        <img src="images/header-bike.png" width="26px" alt="">
+                    <div class="col-md-4 col-lg-3">
+                        <article class="card h-100 border-0 shadow">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/header-bike.png" width="26" alt="Honda logo" loading="lazy">
                                         <div class="ms-2">
-                                            <a href="#" class="text-decoration-none text-muted">Honda</a> <br>
+                                            <a href="#" class="text-decoration-none text-muted">Honda</a><br>
                                             <a href="#" class="text-decoration-none text-muted">@honda</a>
                                         </div>
                                     </div>
-
+                                    <i class="fab fa-twitter fs-4 text-primary"></i>
                                 </div>
-                                <i class="fab fa-twitter fs-2"></i>
-
-
+                                <p class="card-text">Game-changing style. The all-new<br>#HondaAccord</p>
                             </div>
-                            <p class="card-text">
-                                Dark and brooding. <br> #HondaAccord
-                            </p>
-                        </div>
-                        <img src="images/c-4.png" class="card-img-top honda-img" alt="...">
-
-
-                        <p class="text-end me-2 text-muted mt-3">21 Jul 2021</p>
-
+                            <iframe src="https://www.youtube.com/embed/r76X94Ntf7c" title="Honda Accord promotional video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="card-img-bottom" height="200"></iframe>
+                            <p class="text-end me-2 text-muted mt-3 small">21 Jul 2021</p>
+                        </article>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body">
-                            <div class="card-title d-flex justify-content-between">
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                        <img src="images/header-bike.png" width="26px" alt="">
-                                        <div class="ms-2">
-                                            <a href="#" class="text-decoration-none text-muted">Honda</a> <br>
-                                            <a href="#" class="text-decoration-none text-muted">@honda</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <i class="fab fa-twitter fs-2"></i>
-
-
-                            </div>
-                            <p class="card-text">
-                                An evening drive to ease your mind. <br> #HondaAccord
-                            </p>
-                        </div>
-                        <iframe src="https://www.youtube.com/embed/F1Isj24FBa0" height="300px"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-
-
-                        <p class="text-end me-2 text-muted mt-3">21 Jul 2021</p>
-
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100 border-0 shadow">
-                        <div class="card-body">
-                            <div class="card-title d-flex justify-content-between">
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="d-flex justify-content-between align-items-center">
-
-                                        <img src="images/header-bike.png" width="26px" alt="">
-                                        <div class="ms-2">
-                                            <a href="#" class="text-decoration-none text-muted">Honda</a> <br>
-                                            <a href="#" class="text-decoration-none text-muted">@honda</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <i class="fab fa-twitter fs-2"></i>
-
-
-                            </div>
-                            <p class="card-text">
-                                Game-changing style. The all-new <br> #HondaAccord
-                            </p>
-                        </div>
-                        <iframe height="315" src="https://www.youtube.com/embed/r76X94Ntf7c"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-
-
-                        <p class="text-end me-2 text-muted mt-3">21 Jul 2021</p>
-
-                    </div>
-                </div>
-
-            </div>
-            </div>
-
-
-
             </div>
         </section>
-
-
-        <!-- Dealer section -->
-
-        <section class="container dealer">
-            <h1 class="text-center fw-bold"><span>Locate Your Nearest Dealer</span></h1>
-            <p class="text-center mb-5">Want to know where you can get a first-hand look at the incredible Honda cars?
-                To
-                bridge the distance
-                between you and your dream car, we can help you find your nearest Honda dealer.</p>
-            <div class="contact-form d-flex align-items-center justify-content-center bg-light" style="height: 320px;">
-                <form action="">
-                    <div class="row gy-4">
-                        <div class="col-lg-6 ">
-                            <input type="text" placeholder="Use My Current Location" class="form-control">
+        <section class="container dealer py-5">
+            <h2 class="text-center fw-bold mb-4"><span>Locate Your Nearest Dealer</span></h2>
+            <p class="text-center mb-5">Find your nearest Honda dealer to get a first-hand look at our incredible motorcycles.</p>
+            <div class="contact-form bg-light p-4 rounded-3">
+                <form aria-label="Dealer locator form">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Use My Current Location" aria-label="Current location">
                         </div>
-                        <div class="col-lg-6 ">
-                            <input type="text" placeholder="search by dealer name/state and city/pin code/area"
-                                class="form-control">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Search by dealer name, state, city, or postal code" aria-label="Search dealer">
                         </div>
-                        <div class="col-lg-6 ">
-                            <div class="input-group mb-3">
-                                <select class="form-select" id="inputGroupSelect01">
-                                    <option selected>Select Outlet type</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
+                        <div class="col-md-6">
+                            <select class="form-select" aria-label="Outlet type">
+                                <option selected>Select Outlet Type</option>
+                                <option value="1">Sales</option>
+                                <option value="2">Service</option>
+                                <option value="3">Both</option>
+                            </select>
                         </div>
-                        <div class="col-lg-6 ">
-                            <div class="input-group mb-3">
-                                <select class="form-select" id="inputGroupSelect01">
-                                    <option selected>100km</option>
-                                    <option value="1">100km</option>
-                                    <option value="2">60km</option>
-                                    <option value="3">50km</option>
-                                </select>
-                            </div>
+                        <div class="col-md-6">
+                            <select class="form-select" aria-label="Search radius">
+                                <option selected>100km</option>
+                                <option value="1">60km</option>
+                                <option value="2">50km</option>
+                                <option value="3">25km</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Find Dealer</button>
                         </div>
                     </div>
-                    <button class="btn-primary btn">Find Dealer</button>
-
                 </form>
             </div>
         </section>
-
-        <!-- Happy Clients section -->
-
-        <section class="container clients ">
-            <h1 class="text-center ">Happy <span>Clients says</span></h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100 border-0 shadow rounded-3 p-4 d-flex align-items-center text-center">
-                        <img src="images/user-1.png" class="card-img-top" alt="...">
+        <section class="container clients py-5">
+            <h2 class="text-center fw-bold mb-5">Happy <span>Clients Say</span></h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="card h-100 border-0 shadow rounded-3 p-4 text-center">
+                        <img src="images/user-1.png" class="card-img-top mx-auto" alt="Client Regina Miles" width="169" loading="lazy">
                         <div class="card-body">
-                            <p class="card-text">Slate helps you see how many more days you need to work to reach your
-                                financial goal for the month and year.</p>
-
+                            <p class="card-text">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
                         </div>
-                        <div class="client-rating">
+                        <div class="client-rating mb-3" aria-label="4 out of 5 stars">
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star empty"></i>
-
                         </div>
-                        <p class="client-name">Regina Miles</p>
-                        <h5>Banker</h5>
-                    </div>
+                        <p class="client-name mb-1">Regina Miles</p>
+                        <p class="occupation text-muted">Banker</p>
+                    </article>
                 </div>
-                <div class="col">
-                    <div class="card h-100 border-0 shadow rounded-3 p-4 d-flex align-items-center text-center">
-                        <img src="images/user-2.png" class="card-img-top" alt="...">
+                <div class="col-md-4">
+                    <article class="card h-100 border-0 shadow rounded-3 p-4 text-center">
+                        <img src="images/user-2.png" class="card-img-top mx-auto" alt="Client John Doe" width="169" loading="lazy">
                         <div class="card-body">
-                            <p class="card-text">Slate helps you see how many more days you need to work to reach your
-                                financial goal for the month and year.</p>
-
+                            <p class="card-text">The Honda CBR is an incredible machine, perfect for both city rides and long-distance adventures.</p>
                         </div>
-                        <div class="client-rating">
+                        <div class="client-rating mb-3" aria-label="4 out of 5 stars">
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star empty"></i>
-
                         </div>
-                        <p class="client-name">Regina Miles</p>
-                        <h5>Banker</h5>
-                    </div>
+                        <p class="client-name mb-1">John Doe</p>
+                        <p class="occupation text-muted">Engineer</p>
+                    </article>
                 </div>
-                <div class="col">
-                    <div class="card h-100 border-0 shadow rounded-3 p-4 d-flex align-items-center text-center">
-                        <img src="images/user-3.png" class="card-img-top" alt="...">
+                <div class="col-md-4">
+                    <article class="card h-100 border-0 shadow rounded-3 p-4 text-center">
+                        <img src="images/user-3.png" class="card-img-top mx-auto" alt="Client Jane Smith" width="169" loading="lazy">
                         <div class="card-body">
-                            <p class="card-text">Slate helps you see how many more days you need to work to reach your
-                                financial goal for the month and year.</p>
-
+                            <p class="card-text">I love the sleek design and performance of my Honda bike. It's a joy to ride every day.</p>
                         </div>
-                        <div class="client-rating">
+                        <div class="client-rating mb-3" aria-label="4 out of 5 stars">
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star filled"></i>
                             <i class="fas fa-star empty"></i>
-
                         </div>
-                        <p class="client-name">Regina Miles</p>
-                        <h5>Banker</h5>
-                    </div>
+                        <p class="client-name mb-1">Jane Smith</p>
+                        <p class="occupation text-muted">Designer</p>
+                    </article>
                 </div>
-
             </div>
         </section>
-
-        <!---------------
-            Frequently Asked Questions
-         --------------->
-
-        <section class="container questions">
-            <h1 class="text-center">Frequently Asked <span>Questions</span></h1>
+        <section class="container faq py-5">
+            <h2 class="text-center fw-bold mb-5">Frequently Asked <span>Questions</span></h2>
             <div class="row g-4">
                 <div class="col-lg-6">
-                    <img src="images/faq.png" width="431px" height="423px" class="faq-img" alt="">
+                    <img src="images/faq.png" class="img-fluid faq-img" alt="Frequently asked questions illustration" loading="lazy">
                 </div>
-                <div class="col-lg-6 overflow-hidden accordions" style="min-height: 530px;">
-                    <div class=" accordion" id="accordionExample">
-                        <div class="accordion-item  ">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button py-4" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What are the most important things I should
-                                    know about riding a bike?
+                <div class="col-lg-6">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faqHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                    What are the most important things I should know about riding a bike?
                                 </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
+                            </h3>
+                            <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne">
                                 <div class="accordion-body">
-                                    Safety First! Always obey the rules of the road. Obey all traffic signals, signs,
-                                    and laws. Get in the mindset of “driving” your bike—not just “riding” your bike.
-                                    This will help you be a more focused and legally compliant bike rider.
+                                    Always obey traffic rules, signals, and laws. Approach riding with a “driving” mindset to stay focused and legally compliant.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button py-4 collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    How can I tell if my helmet is old and I need a
-                                    new one?
+                            <h3 class="accordion-header" id="faqHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                    How can I tell if my helmet is old and I need a new one?
                                 </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
+                            </h3>
+                            <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo">
                                 <div class="accordion-body">
-                                    Bear in mind that if the helmet did its job most people would tell you that they did
-                                    not even hit their head, or did not hit their head that hard. And the thin shells on
-                                    most helmets now tend to hide any dents in the foam. But if you can see marks on the
-                                    shell or measure any foam crush at all, replace the helmet.
+                                    Check for visible damage or foam crush. Even minor impacts can compromise a helmet’s effectiveness, so replace it if you see any signs.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    My bike has been in storage is it safe to ride?
+                            <h3 class="accordion-header" id="faqHeadingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                    Is my bike safe to ride after storage?
                                 </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
+                            </h3>
+                            <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree">
                                 <div class="accordion-body">
-                                    Tires are likely dry rotted, tubes as well. Brake pads probably hard as stone. Lube
-                                    the cables or replace.
-                                    Really it's best to see what isn't working and what plans you have for the bike.
-                                    Photos of the bike and moving components would be ideal to give more precise
-                                    indications. It may just need some lube on the chain, but it could also need a whole
-                                    lot more.
+                                    Inspect tires, tubes, brake pads, and cables. Dry rot or hardened components may require replacement or lubrication.
                                 </div>
                             </div>
                         </div>
-
-
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingfour">
-                                <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                            <h3 class="accordion-header" id="faqHeadingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
                                     What rules should I follow when riding my bike?
                                 </button>
-                            </h2>
-                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
-                                data-bs-parent="#accordionExample">
+                            </h3>
+                            <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour">
                                 <div class="accordion-body">
-                                    Depending on what state you live in, laws like safe passing distance for vehicles
-                                    and helmet requirements can vary. (Note: We firmly stand by always wearing a
-                                    helmet.) However, there are a few basic rules for operating a bicycle on the roadway
-                                    all cyclists are expected to abide by.
-                                    Follow these rules of the road to stay safe and obey local traffic laws.
+                                    Follow local traffic laws, including safe passing distances and helmet requirements. Always wear a helmet for safety.
                                 </div>
                             </div>
                         </div>
@@ -614,76 +365,47 @@
             </div>
         </section>
     </main>
-
-
-    <!-- start footer  -->
-    <footer>
-
-        <div class="container py-5">
-            <div class=" d-lg-flex justify-content-between">
-                <div>
-                    <ul class="nav ">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">Download Now</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">License</a>
-                        </li>
-                    </ul>
-                    <ul class="nav ">
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Careers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Help</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy Policy</a>
-                        </li>
-
-                    </ul>
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <nav aria-label="Footer navigation">
+                        <ul class="nav flex-column flex-sm-row">
+                            <li class="nav-item"><a class="nav-link" href="#">Download Now</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">License</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Privacy Policy</a></li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <div>
-                    <h6>Get the App</h6>
-                    <button class=" btn btn-outline-dark d-flex align-items-center text-white rounded-3">
-                        <i class="fab fa-apple"></i>
-                        <div class="ms-2">
-                            <small>Download on the</small>
-                            <h6>App Store</h6>
-                        </div>
-                    </button>
-                    <button class=" btn btn-outline-dark d-flex align-items-center text-white rounded-3 mt-3">
-                        <i class="fab fa-google-play"></i>
-                        <div class="ms-2">
-                            <small>Download on the</small>
-                            <h6>App Store</h6>
-                        </div>
-                    </button>
-
-
+                <div class="col-lg-6 text-lg-end">
+                    <h6 class="fw-bold mb-3">Get the App</h6>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-lg-end">
+                        <a href="#" class="btn btn-outline-light d-flex align-items-center rounded-3" aria-label="Download on the App Store">
+                            <i class="fab fa-apple fs-4"></i>
+                            <div class="ms-2">
+                                <small>Download on the</small>
+                                <h6 class="mb-0">App Store</h6>
+                            </div>
+                        </a>
+                        <a href="#" class="btn btn-outline-light d-flex align-items-center rounded-3" aria-label="Get it on Google Play">
+                            <i class="fab fa-google-play fs-4"></i>
+                            <div class="ms-2">
+                                <small>Get it on</small>
+                                <h6 class="mb-0">Google Play</h6>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-
             </div>
-            <p class="mt-2">© 20210 bike. All rights reserved</p>
+            <p class="mt-4 text-muted small">© 2021 Bike. All rights reserved.</p>
         </div>
-
     </footer>
-
-
-    <!--  Bootstrap Bundle with Popper -->
+    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-
-
 </body>
-
 </html>
